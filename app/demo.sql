@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `silex-api`;
+
+USE `silex-api`;
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT NOT NULL,
     firstName VARCHAR(255) NOT NULL,
