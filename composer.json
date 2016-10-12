@@ -1,0 +1,35 @@
+{
+    "name": "maxpou/silex-api-boilerplate",
+    "description": "A Silex API which uses HAL/HATEOAS",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxence POUTORD",
+            "email": "github@maxpou.fr"
+        }
+    ],
+    "require": {
+        "silex/silex": "~2.0",
+        "doctrine/dbal": "~2.2",
+        "symfony/yaml": "^3.1",
+        "monolog/monolog": "^1.21",
+        "willdurand/hateoas": "^2.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "": "src/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^3.1",
+        "phpunit/phpunit": "^5.6",
+        "symfony/browser-kit": "^3.1",
+        "silex/web-profiler": "^2.0"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit src/",
+        "coverage": "./vendor/bin/phpunit src/ --coverage-html=./report",
+        "run": "php -S 0.0.0.0:4000 -t web/"
+    }
+}
