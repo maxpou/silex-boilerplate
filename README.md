@@ -1,5 +1,7 @@
 # Social network API
 
+[![Build Status](https://travis-ci.org/maxpou/silex-boilerplate.svg?branch=master)](https://travis-ci.org/maxpou/silex-boilerplate)
+
 A lightweight [Silex](http://silex.sensiolabs.org/) application which provide an API with [HAL](http://stateless.co/hal_specification.html)/HATEOAS.
 
 ## Installation

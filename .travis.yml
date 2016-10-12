@@ -4,6 +4,11 @@ language: php
 services:
   - mysql
 
+env:
+  global:
+    - DB_USER="root"
+    - DB_PASS=""
+
 php:
   - 5.6
   - 7.0
@@ -12,12 +17,10 @@ cache:
   directories:
     - $HOME/.composer/cache/files
 
-
 before_script:
+  - mysql < app/demo.sql
   - composer self-update
   - composer install --dev --no-interaction
-  - mysql -u root -e 'create database silex-api;'
-  - mysql -u root -p silex-api < app.demo.sql
 
 script:
   - composer test

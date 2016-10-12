@@ -2,4 +2,4 @@ database_host: 127.0.0.1
 database_port: null
 database_name: silex-api
 database_user: root
-database_password: root
+database_password: ~
